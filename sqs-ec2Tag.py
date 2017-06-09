@@ -4,7 +4,7 @@ import logging
 import boto3
 
 queueName = 's3-ec2-tag'
-logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s', level=logging.INFO, datefmt='%Y-%m-%d %H:%M:%S %Z')
+logging.basicConfig(format='%(asctime)s %(name)s %(levelname)s %(message)s', level=logging.INFO, datefmt='%Y-%m-%d %H:%M:%S %Z')
 logger = logging.getLogger(__name__)
 
 def check_sqs(qn):
